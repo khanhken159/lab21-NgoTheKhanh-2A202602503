@@ -1,0 +1,12 @@
+# Keep measured results and adapters tracked for the assignment.
+.venv*/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ipynb_checkpoints/
+.cache/
+hf_cache/
+.env
+.env.local
+*.token
+*.zip

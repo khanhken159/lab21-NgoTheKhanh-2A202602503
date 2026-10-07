@@ -1,0 +1,5 @@
+* text=auto
+data/*.jsonl text eol=lf
+data/checksums.json text eol=lf
+*.safetensors filter=lfs diff=lfs merge=lfs -text
+submission/RUN_LOG_COLAB.txt whitespace=-blank-at-eol

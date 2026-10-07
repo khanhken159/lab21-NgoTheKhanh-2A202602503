@@ -1,0 +1,285 @@
+{
+  "provenance": "Retrospective generation on the unchanged original regression set; system=None and max_new_tokens=96 for both models, matching NB2/NB5",
+  "generated_at_utc": "2026-10-07T09:51:19.131257+00:00",
+  "model": "unsloth/Qwen3.5-4B",
+  "dataset_sha256": "9c6ba90ea86e28fbc7102bf4cc4cb1e23c4668cf95bfcae55c3c114d34dc133b",
+  "baseline_regression": 0.7911111111111111,
+  "ft_regression": 0.7444444444444444,
+  "original_baseline_regression": 0.7911111111111111,
+  "original_ft_regression": 0.7444,
+  "aggregate_scores_match": true,
+  "n_losses": 3,
+  "loss_examples": [
+    {
+      "group": "regression",
+      "i": 9,
+      "instruction": "Một năm có bao nhiêu tháng?",
+      "keywords": [
+        "12"
+      ],
+      "base_pred": "Một năm bình thường có **12 tháng**.\n\nCụ thể, các tháng trong năm là:\n1. Tháng 1\n2. Tháng 2\n3. Tháng 3\n4. Tháng 4\n5. Tháng 5\n6. Tháng 6\n7. Tháng 7\n8. Tháng 8\n9. Tháng 9\n10. Tháng 10\n11. Tháng 11\n12. Tháng",
+      "ft_pred": "{\"intent\": \"hoi_thong_tin\", \"confidence\": 0.95, \"urgency\": \"thap\", \"intent_text\": \"Người dùng hỏi về số lượng tháng trong một năm.\", \"urgency_text\": \"Câu hỏi này không cấp bách.\", \"suggested_actions\": [\"trung_tinh\"], \"suggested_actions_text\": \"Cung cấp thông tin chính xác và ngắn gọn.\"}\nuser\n<think>\n\n</think>",
+      "base_score": 1.0,
+      "ft_score": 0.0,
+      "delta": -1.0,
+      "outcome": "FT thua"
+    },
+    {
+      "group": "regression",
+      "i": 11,
+      "instruction": "Kể tên một loại trái cây nhiệt đới.",
+      "keywords": [
+        "xoài",
+        "chuối",
+        "dứa",
+        "sầu riêng",
+        "mít"
+      ],
+      "base_pred": "Một loại trái cây nhiệt đới phổ biến và nổi tiếng là **dâu tây** (dù thực ra dâu tây không phải là trái cây nhiệt đới điển hình, tôi có thể hiểu nhầm). Hãy để tôi đưa ra một ví dụ chính xác hơn:\n\n**Dâu tây** không phải là trái cây nhiệt đới. Một loại trái cây nhiệt đới điển hình là **dâu tây**... không, tôi xin lỗi, tôi đang lặp lại.\n\nĐáp án",
+      "ft_pred": "{\"intent\": \"trai_cuoi\", \"confidence\": 0.95, \"response\": \"Dâu tây\"}",
+      "base_score": 0.2,
+      "ft_score": 0.0,
+      "delta": -0.2,
+      "outcome": "FT thua"
+    },
+    {
+      "group": "regression",
+      "i": 14,
+      "instruction": "Giải thích ngắn gọn quang hợp là gì.",
+      "keywords": [
+        "ánh sáng",
+        "cây"
+      ],
+      "base_pred": "**Quang hợp** là quá trình sinh học quan trọng mà thực vật, tảo và một số vi khuẩn sử dụng năng lượng ánh sáng mặt trời để chuyển hóa khí carbon dioxide ($CO_2$) và nước ($H_2O$) thành **đường glucose** (nguồn thức ăn) và giải phóng khí **oxy ($O_2$)**.\n\nQuá trình này diễn ra chủ yếu ở lá cây nhờ sắc tố **diệp lục**.",
+      "ft_pred": "{\"intent\": \"definition\", \"response\": \"Quang hợp là quá trình thực vật, tảo và một số vi khuẩn sử dụng năng lượng ánh sáng mặt trời để chuyển hóa khí cacbon dioxide ($CO_2$) và nước ($H_2O$) thành chất hữu cơ (chủ yếu là đường glucose) và giải phóng khí oxy ($O_2$). Đây là quá trình sống còn, cung cấp nguồn thức ăn cho hầu hết sinh vật",
+      "base_score": 1.0,
+      "ft_score": 0.5,
+      "delta": -0.5,
+      "outcome": "FT thua"
+    }
+  ],
+  "all_examples": [
+    {
+      "group": "regression",
+      "i": 0,
+      "instruction": "Thủ đô của Việt Nam là thành phố nào?",
+      "keywords": [
+        "Hà Nội"
+      ],
+      "base_pred": "Thủ đô của Việt Nam là thành phố **Hà Nội**.\n\nThành phố này đóng vai trò là trung tâm chính trị, hành chính, văn hóa và giáo dục của cả nước, đồng thời cũng là nơi đặt trụ sở của Quốc hội, Chính phủ và Tòa án Nhân dân Tối cao.",
+      "ft_pred": "{\"intent\": \"trivia\", \"answer\": \"Hà Nội\", \"confidence\": 0.99}",
+      "base_score": 1.0,
+      "ft_score": 1.0,
+      "delta": 0.0,
+      "outcome": "Hòa"
+    },
+    {
+      "group": "regression",
+      "i": 1,
+      "instruction": "Kể tên hai đại dương lớn nhất thế giới.",
+      "keywords": [
+        "Thái Bình Dương",
+        "Đại Tây Dương"
+      ],
+      "base_pred": "Hai đại dương lớn nhất thế giới là:\n\n1.  **Đại dương Thái Bình Dương** (lớn nhất và sâu nhất).\n2.  **Đại dương Đại Tây Dương** (lớn thứ hai).",
+      "ft_pred": "{\"intent\": \"trivia\", \"response\": \"Hai đại dương lớn nhất thế giới là **Đại Tây Dương** và **Thái Bình Dương**.\"}",
+      "base_score": 1.0,
+      "ft_score": 1.0,
+      "delta": 0.0,
+      "outcome": "Hòa"
+    },
+    {
+      "group": "regression",
+      "i": 2,
+      "instruction": "1 km bằng bao nhiêu mét?",
+      "keywords": [
+        "1000"
+      ],
+      "base_pred": "Trong hệ đo lường quốc tế, tiền tố \"kilo\" (ký hiệu là **km**) có nghĩa là **1000**. Do đó, 1 kilômét tương đương với 1000 mét.\n\nKết quả: **1 km = 1000 m**.",
+      "ft_pred": "{\"prefix\": \"1 km\", \"suffix\": \"bằng 1000 mét.\"}",
+      "base_score": 1.0,
+      "ft_score": 1.0,
+      "delta": 0.0,
+      "outcome": "Hòa"
+    },
+    {
+      "group": "regression",
+      "i": 3,
+      "instruction": "Viết một câu chúc mừng sinh nhật bằng tiếng Việt.",
+      "keywords": [
+        "sinh nhật"
+      ],
+      "base_pred": "Chúc bạn một ngày sinh nhật thật vui vẻ, tràn đầy niềm vui và sức khỏe, cùng với những điều may mắn và hạnh phúc nhất trong năm mới!",
+      "ft_pred": "{\"intent\": \"chuc_mung_sinh_nhat\", \"urgency\": \"trung_tinh\", \"tone\": \"trung_tinh\", \"content\": \"Chúc bạn một ngày sinh nhật thật vui vẻ, tràn đầy năng lượng và luôn hạnh phúc bên những người thân yêu!\"}",
+      "base_score": 1.0,
+      "ft_score": 1.0,
+      "delta": 0.0,
+      "outcome": "Hòa"
+    },
+    {
+      "group": "regression",
+      "i": 4,
+      "instruction": "Dịch sang tiếng Anh: 'Tôi thích đọc sách'.",
+      "keywords": [
+        "read",
+        "book"
+      ],
+      "base_pred": "I like reading books.",
+      "ft_pred": "\"I like reading books.\"",
+      "base_score": 1.0,
+      "ft_score": 1.0,
+      "delta": 0.0,
+      "outcome": "Hòa"
+    },
+    {
+      "group": "regression",
+      "i": 5,
+      "instruction": "Sông nào dài nhất Việt Nam?",
+      "keywords": [
+        "Đồng Nai",
+        "Mê Kông",
+        "Cửu Long"
+      ],
+      "base_pred": "Sông dài nhất Việt Nam là **sông Hồng**.\n\nSông Hồng có độ dài khoảng **1.450 km**, bắt nguồn từ dãy Trường Sơn (tỉnh Lào Cai) và chảy qua các tỉnh miền Bắc trước khi đổ ra biển Đông tại cửa sông Hồng (thuộc tỉnh Quảng Ninh). Đây là con sông quan trọng nhất về kinh tế và văn hóa, đóng vai trò là nguồn cung cấp nước chính cho đồng bằng Bắc Bộ.\n\nMột số",
+      "ft_pred": "{\"intent\": \"geography\", \"answer\": \"Sông Hồng\", \"confidence\": 0.95, \"source\": \"Tổng cục Thủy lợi\", \"context\": \"Sông Hồng là con sông lớn nhất và dài nhất Việt Nam, với chiều dài khoảng 1.450 km, chảy qua các tỉnh Bắc Giang, Bắc Ninh, Hải Dương, Hưng Yên, Thái Bình, Hà Nam, Hà Nội và Hà Nam trước khi đổ ra biển Đông",
+      "base_score": 0.0,
+      "ft_score": 0.0,
+      "delta": 0.0,
+      "outcome": "Hòa"
+    },
+    {
+      "group": "regression",
+      "i": 6,
+      "instruction": "2 mũ 10 bằng bao nhiêu?",
+      "keywords": [
+        "1024"
+      ],
+      "base_pred": "Để tính giá trị của $2^{10}$ (2 mũ 10), chúng ta có thể thực hiện phép tính theo từng bước như sau:\n\n1.  **Phân tích thành các lũy thừa nhỏ hơn**:\n    Ta biết rằng $2^5 = 32$.\n    Do đó, $2^{10} = 2^5 \\times 2^5$.\n\n2.  **Thực hiện phép nhân**:",
+      "ft_pred": "{\"intent\": \"math\", \"result\": 1024, \"explanation\": \"2 mũ 10 có nghĩa là nhân số 2 với chính nó 10 lần: 2 × 2 × 2 × 2 × 2 × 2 × 2 × 2 × 2 × 2. Kết quả của phép tính này là 1024.\"}",
+      "base_score": 0.0,
+      "ft_score": 1.0,
+      "delta": 1.0,
+      "outcome": "FT thắng"
+    },
+    {
+      "group": "regression",
+      "i": 7,
+      "instruction": "Nêu một lợi ích của việc tập thể dục.",
+      "keywords": [
+        "sức khỏe"
+      ],
+      "base_pred": "Một lợi ích nổi bật của việc tập thể dục là **cải thiện sức khỏe tim mạch**.\n\nKhi bạn vận động thường xuyên, tim sẽ trở nên khỏe mạnh hơn và có khả năng bơm máu hiệu quả hơn, giúp giảm nguy cơ mắc các bệnh tim mạch, huyết áp cao và các vấn đề về chuyển hóa khác.",
+      "ft_pred": "{\"intent\": \"health\", \"response\": \"Một lợi ích nổi bật của việc tập thể dục là giúp **tăng cường sức khỏe tim mạch**. Khi bạn vận động thường xuyên, tim sẽ hoạt động hiệu quả hơn, bơm máu mạnh mẽ hơn đến các cơ quan trong cơ thể, đồng thời giúp giảm nguy cơ mắc các bệnh tim mạch, đột quỵ và cao huyết áp.\"}",
+      "base_score": 1.0,
+      "ft_score": 1.0,
+      "delta": 0.0,
+      "outcome": "Hòa"
+    },
+    {
+      "group": "regression",
+      "i": 8,
+      "instruction": "Ai là tác giả của Truyện Kiều?",
+      "keywords": [
+        "Nguyễn Du"
+      ],
+      "base_pred": "Tác giả của kiệt tác **Truyện Kiều** là nhà thơ lớn **Nguyễn Du** (1765 – 1820).\n\nNguyễn Du là một nhà văn, nhà thơ, nhà chính trị gia nổi tiếng của Việt Nam, người đã sáng tác tác phẩm này khi ông đang lưu vong tại Trung Quốc. Truyện Kiều được viết bằng chữ Hán (dạng chữ Nôm) và là một trong những tác phẩm văn học hay nhất, có giá trị",
+      "ft_pred": "{\"intent\": \"truyen_kieu\", \"answer\": \"Truyện Kiều là tác phẩm kinh điển của nhà thơ **Nguyễn Du**.\", \"confidence\": 0.99, \"source\": \"Wiki\"}",
+      "base_score": 1.0,
+      "ft_score": 1.0,
+      "delta": 0.0,
+      "outcome": "Hòa"
+    },
+    {
+      "group": "regression",
+      "i": 9,
+      "instruction": "Một năm có bao nhiêu tháng?",
+      "keywords": [
+        "12"
+      ],
+      "base_pred": "Một năm bình thường có **12 tháng**.\n\nCụ thể, các tháng trong năm là:\n1. Tháng 1\n2. Tháng 2\n3. Tháng 3\n4. Tháng 4\n5. Tháng 5\n6. Tháng 6\n7. Tháng 7\n8. Tháng 8\n9. Tháng 9\n10. Tháng 10\n11. Tháng 11\n12. Tháng",
+      "ft_pred": "{\"intent\": \"hoi_thong_tin\", \"confidence\": 0.95, \"urgency\": \"thap\", \"intent_text\": \"Người dùng hỏi về số lượng tháng trong một năm.\", \"urgency_text\": \"Câu hỏi này không cấp bách.\", \"suggested_actions\": [\"trung_tinh\"], \"suggested_actions_text\": \"Cung cấp thông tin chính xác và ngắn gọn.\"}\nuser\n<think>\n\n</think>",
+      "base_score": 1.0,
+      "ft_score": 0.0,
+      "delta": -1.0,
+      "outcome": "FT thua"
+    },
+    {
+      "group": "regression",
+      "i": 10,
+      "instruction": "Nước sôi ở bao nhiêu độ C tại áp suất thường?",
+      "keywords": [
+        "100"
+      ],
+      "base_pred": "Nước sôi ở **100°C** (100 độ C) tại áp suất thường (hay còn gọi là áp suất khí quyển tiêu chuẩn, tương đương 1 atm hoặc 101.325 kPa).\n\nĐiều này xảy ra khi áp suất hơi bão hòa của nước bằng với áp suất khí quyển xung quanh. Tuy nhiên, cần lưu ý rằng điểm sôi của nước thực tế có thể thay đổi nhẹ tùy thuộc vào độ cao",
+      "ft_pred": "{\"intent\": \"fact\", \"answer\": \"Nước sôi ở 100 độ C tại áp suất thường\", \"confidence\": 0.99}",
+      "base_score": 1.0,
+      "ft_score": 1.0,
+      "delta": 0.0,
+      "outcome": "Hòa"
+    },
+    {
+      "group": "regression",
+      "i": 11,
+      "instruction": "Kể tên một loại trái cây nhiệt đới.",
+      "keywords": [
+        "xoài",
+        "chuối",
+        "dứa",
+        "sầu riêng",
+        "mít"
+      ],
+      "base_pred": "Một loại trái cây nhiệt đới phổ biến và nổi tiếng là **dâu tây** (dù thực ra dâu tây không phải là trái cây nhiệt đới điển hình, tôi có thể hiểu nhầm). Hãy để tôi đưa ra một ví dụ chính xác hơn:\n\n**Dâu tây** không phải là trái cây nhiệt đới. Một loại trái cây nhiệt đới điển hình là **dâu tây**... không, tôi xin lỗi, tôi đang lặp lại.\n\nĐáp án",
+      "ft_pred": "{\"intent\": \"trai_cuoi\", \"confidence\": 0.95, \"response\": \"Dâu tây\"}",
+      "base_score": 0.2,
+      "ft_score": 0.0,
+      "delta": -0.2,
+      "outcome": "FT thua"
+    },
+    {
+      "group": "regression",
+      "i": 12,
+      "instruction": "Hãy tóm tắt ý nghĩa của câu 'Có công mài sắt có ngày nên kim'.",
+      "keywords": [
+        "kiên trì",
+        "cố gắng",
+        "bền"
+      ],
+      "base_pred": "Câu tục ngữ **\"Có công mài sắt có ngày nên kim\"** mang ý nghĩa sâu sắc về tinh thần **kiên trì, nỗ lực và sự bền bỉ** trong việc hoàn thành mục tiêu.\n\nCụ thể, ý nghĩa của câu này bao gồm các khía cạnh chính sau:\n\n*   **Sự kiên trì dẫn đến thành công:** Dù việc làm có vẻ nhỏ bé, đơn giản hay khó khăn đến đâu (như mài một thanh sắt), nhưng nếu ta luôn",
+      "ft_pred": "{\"intent\": \"tinh thần\", \"summary\": \"Câu tục ngữ này khuyên người ta phải kiên trì, nỗ lực không ngừng trong công việc và học tập, dù mục tiêu có vẻ khó khăn đến đâu cũng sẽ thành công.\", \"key_message\": \"Sự kiên trì và nỗ lực bền bỉ sẽ dẫn đến thành công\", \"example\": \"Học sinh cần dành thời gian luyện tập hàng ngày để đạt được điểm số cao.\"}",
+      "base_score": 0.6666666666666666,
+      "ft_score": 0.6666666666666666,
+      "delta": 0.0,
+      "outcome": "Hòa"
+    },
+    {
+      "group": "regression",
+      "i": 13,
+      "instruction": "Thành phố Hồ Chí Minh trước đây có tên là gì?",
+      "keywords": [
+        "Sài Gòn"
+      ],
+      "base_pred": "Thành phố Hồ Chí Minh trước đây có tên là **Saigon** (viết là Sài Gòn trong tiếng Việt).\n\nThành phố này được đặt tên theo tên của một dòng sông lớn chảy qua khu vực, tên gọi này đã được sử dụng rộng rãi từ thế kỷ 17 cho đến năm 1976. Vào ngày 2 tháng 7 năm 1976, theo quyết định của Quốc hội nước Cộng hòa Xã hội Chủ nghĩa Việt Nam",
+      "ft_pred": "{\"intent\": \"thong_tin\", \"answer\": \"Thành phố Hồ Chí Minh trước đây có tên là **Saigon** (tên tiếng Pháp: *Sài Gòn*). Đây là tên gọi phổ biến nhất trong suốt thời kỳ thuộc địa và cả sau khi Việt Nam giành độc lập cho đến năm 1976. Vào ngày 2 tháng 7 năm 1976, theo quyết định của Quốc hội nước Cộng hòa Xã hội Chủ nghĩa",
+      "base_score": 1.0,
+      "ft_score": 1.0,
+      "delta": 0.0,
+      "outcome": "Hòa"
+    },
+    {
+      "group": "regression",
+      "i": 14,
+      "instruction": "Giải thích ngắn gọn quang hợp là gì.",
+      "keywords": [
+        "ánh sáng",
+        "cây"
+      ],
+      "base_pred": "**Quang hợp** là quá trình sinh học quan trọng mà thực vật, tảo và một số vi khuẩn sử dụng năng lượng ánh sáng mặt trời để chuyển hóa khí carbon dioxide ($CO_2$) và nước ($H_2O$) thành **đường glucose** (nguồn thức ăn) và giải phóng khí **oxy ($O_2$)**.\n\nQuá trình này diễn ra chủ yếu ở lá cây nhờ sắc tố **diệp lục**.",
+      "ft_pred": "{\"intent\": \"definition\", \"response\": \"Quang hợp là quá trình thực vật, tảo và một số vi khuẩn sử dụng năng lượng ánh sáng mặt trời để chuyển hóa khí cacbon dioxide ($CO_2$) và nước ($H_2O$) thành chất hữu cơ (chủ yếu là đường glucose) và giải phóng khí oxy ($O_2$). Đây là quá trình sống còn, cung cấp nguồn thức ăn cho hầu hết sinh vật",
+      "base_score": 1.0,
+      "ft_score": 0.5,
+      "delta": -0.5,
+      "outcome": "FT thua"
+    }
+  ],
+  "scope_note": "These are general-capability examples, not additional target-ticket losses. Instructor interpretation determines whether they satisfy rubric 3.4."
+}
